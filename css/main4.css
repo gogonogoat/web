@@ -20,6 +20,7 @@
 --color_light_tbl02:rgba(0,0,0,.025);
 --color_card_bg:#fff;
 --color_card_txt:#0d1f2d;
+
 --color_accent:#29f;
 --color_accent2:#f80;
 --color_test:red;
@@ -98,6 +99,7 @@ font-weight:400;
 display:inline-block;
 -webkit-font-smoothing:antialiased
 }
+
 
 .blank_mini:after{
 padding-left:0.25rem;
@@ -226,6 +228,7 @@ text-align:center
 display:inline-block;
 margin:1rem;
 padding:0;
+
 width:125px;
 height:125px;
 background-image:url(../images/footer/goatlogov1.1.png);
@@ -399,6 +402,7 @@ top:0
 .navigation ol{
 margin:0;
 padding:0;
+
 font-size:0;
 
 display:flex;
@@ -409,6 +413,7 @@ flex-wrap:nowrap;
 background:#aaf;
 background:var(--color_base_bg)
 }
+
 
 .navigation ol li{
 display:table-cell;
@@ -425,11 +430,13 @@ vertical-align:middle;
 }
 
 /*
+
 .navigation ol li img{
 width:196px;
 height:40px;
 vertical-align:middle
 }
+
 */
 
 .slider{
@@ -459,9 +466,11 @@ height:auto;
 text-align:center
 }
 .campaign2 .content_image img{
+
 height:40px;
 width:auto;
 }
+
 
 
 .campaign2 .container{
@@ -961,6 +970,7 @@ mask-image:url(../images/svg/mask_right_top.svg)
 }
 
 
+
 .campaign3{
 width:980px;
 height:auto;
@@ -1161,4 +1171,5 @@ margin-left:auto;
 margin-right:auto;
 color:var(--color_card_txt);
 font-size:1rem;
+
 }
