@@ -1,0 +1,118 @@
+﻿
+/**/
+@media screen and (max-width:979px){
+
+.slider{
+display:none;
+}
+
+.navigation{
+height:90px;
+}
+.navigation ol li{
+height:90px;
+}
+
+.campaign2 .sleeve{
+position: relative;
+width:75%;
+
+margin:0;
+margin-left:12.5%;
+margin-right:12.5%;
+margin-bottom:5rem;
+padding:0;
+padding-top:.25rem;
+padding-bottom:.25rem;
+overflow:hidden;
+}
+
+
+.campaign3 .container .nitwit{
+background:url(../images/wish/nitwit_r.jpg);
+background-size:cover;
+}
+.campaign3 .container .nitwit p{
+color:#FFF;
+}
+.campaign3 .container .goat{
+background:url(../images/wish/goat_r.jpg)0% 50%;
+background-size:cover;
+}
+.campaign3 .container .goat p{
+color:#FFF;
+}
+
+}
+
+@media screen and (max-width:480px){
+
+.spbr{
+	display:inline;
+}
+
+.header_topblock .headblock01 .breadcrumb ol li{
+font-size:0.70rem;
+}
+
+.snsarray{
+	display:none;
+}
+.navigation ol li{
+font-size:0.75rem;
+}
+
+.campaign2 .card .campaign_txt_a{
+margin:.25rem .25rem .125rem;
+font-size:0.9rem;
+line-height:1rem;
+}
+.campaign2 .card .campaign_txt_b{
+margin-left:0.25rem;
+margin-right:0.25rem;
+font-size:0.6rem;
+line-height:1rem;
+}
+
+.campaign3 .container .nitwit p{
+
+font-size:2rem;
+}
+.campaign3 .container .goat p{
+font-size:1.5rem;
+}
+
+.campaign2 .content_image img{
+height:30px;
+}
+.campaign3 .content_image img{
+height:60px;
+}
+.subcontent .content_image img{
+height:30px;
+}
+.campaign4 .content_image img{
+height:30px;
+}
+.campaign5 .content_image img{
+height:30px;
+}
+
+.campaign5 .container ul li{
+line-height:1.5rem;
+font-size:0.7rem;
+}
+.foot ol li{
+font-size:.5rem
+}
+.foot ol li:not(:last-child):after{
+margin-left:.25rem;
+margin-right:.25rem;
+font-size:0.5rem;
+}
+
+.foot .copyright{
+font-size:.5rem;
+}
+
+}
