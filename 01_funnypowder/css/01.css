@@ -1,0 +1,115 @@
+/* CSS Document for sp_ls */
+
+html,body{
+width:100%;
+max-width:480px;
+height:100%;
+
+background: #FFFAFF 0% 0% no-repeat padding-box;
+}
+body {
+	width:100%;
+	min-width: 360px;
+	height: 4200px;
+	background: #FFFAFF 0% 0% no-repeat padding-box;
+	opacity: 1;
+}
+
+.header {
+	position:relative;
+	z-index:1000;
+	width:100%;
+	min-width: 360px;
+	height: 30px;
+	background: #000000BF 0% 0% no-repeat padding-box;
+}
+
+.face {
+	position: relative;
+	width:100%;
+	min-width: 360px;
+	height: 240px;
+	background: #221815 0% 0% no-repeat padding-box;
+	opacity: 1;
+}
+
+.mouth {
+	position: absolute;
+	float: right;
+	top: 101px;
+	right: 19px;
+	width: 200px;
+	height: 120px;
+	background: #00000095 0% 0% no-repeat padding-box;
+	opacity: 1;
+	z-index: 100;
+}
+
+.rotate01{
+	animation: r1 13s linear infinite;
+}
+
+@keyframes r1 {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.rotate02{
+	animation: r2 19s linear infinite;
+}
+
+@keyframes r2 {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+.rotate03{
+	animation: r1 53s linear infinite;
+}
+
+
+.shine01,.shine02,.stone {
+	position: absolute;
+	float: left;
+	width: 240px;
+	height: 240px;
+	opacity: 1;
+}
+
+.shine01,.shine02{
+	background: url("../img/light.png");
+	mix-blend-mode:screen;
+	background-blend-mode: screen;
+	z-index:0;
+}
+
+.stone{
+	background: url("../img/jewel.png");
+	z-index:1;
+}
+
+.navigation {
+	width: :100%;
+	min-width: 360px;	
+	height: 60px;
+	background: #E60012 0% 0% no-repeat padding-box;
+	border: 0px solid #707070;
+	opacity: 1;
+	margin-bottom: 30px;
+}
+
+.firstpoem {
+	width:100%;
+	min-width: 360px;
+	height: 120px;
+	opacity: 1;
+	margin-bottom: 30px;
+}
+
+.threepointwindows {
+	width:100%;
+	min-width: 360px;
+	height: 180px;
+	opacity: 1;
+}
