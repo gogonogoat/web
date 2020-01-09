@@ -1,0 +1,14 @@
+<svg
+	 xmlns="http://www.w3.org/2000/svg"
+	 viewBox="0 0 1 1"
+>
+	<defs>
+		<style>
+			.cursor_under{
+				fill:#E60012;
+			}
+		</style>
+	</defs>
+	<title>cursor_under</title>
+	<polygon class="cursor_under" points="0.75 0.5 0.75 0 0.25 0 0.25 0.5 0 0.5 0.5 1 1 0.5 0.75 0.5"/>
+</svg>
