@@ -17,11 +17,11 @@
 
 
 html,body{
-width:100%;
-max-width:480px;
-max-width:360px; /*レスポンシブ最小幅でテスト*/
-height:100%;
-background: #FFFAFF 0% 0% no-repeat padding-box;
+	width:100%;
+	max-width:480px;
+	/*max-width:360px; /*レスポンシブ最小幅でテスト*/
+	height:100%;
+	background: #FFFAFF 0% 0% no-repeat padding-box;
 }
 
 body {
@@ -137,19 +137,24 @@ body {
 .threepointwindows {
 	width:100%;
 	min-width: 360px;
-	height: 180px;
+	height: 205px;
 	opacity: 1;
 	display: flex;
 	flex-direction: row;
 	justify-content:space-around;
-	background: #DDD 0% 0% no-repeat padding-box;
+	/*background: #DDD 0% 0% no-repeat padding-box;*/
 }
 
 .tpw_pack {
-	margin: 0 15px;
-	height: 180px;
+	margin: 0 10px;
+	padding: 12.5px 0;
 	width: 100px;
-	background: #BBB 0% 0% no-repeat padding-box;
+	height: 180px;
+	/*background: #BBB 0% 0% no-repeat padding-box;*/
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .circle {
@@ -160,9 +165,10 @@ body {
 }
 
 .box {
-	margin: 12.5px 0;
+	
+	box-sizing: content-box;
 	width: 100%;
-	height: 45px;
+	height: 60px;
 	background: #FFF 0% 0% no-repeat padding-box;
 	opacity: 1;
 }
@@ -177,51 +183,74 @@ body {
 }
 
 .dupiegraph {
-	margin: 30px 0%;
+	padding: 30px 0 0;
+	/*margin: 30px 0%;*/
 	width:100%;
 	min-width: 360px;
-	height: 240px;
+	height: auto;
+	min-height: 240px;
+	background: #fffbef 0% 0% no-repeat padding-box;
+	
+	opacity: 1;
+	font-size: 0;
+}
+
+.secondpoem_a {
+	margin: 30px 0% 0px;
+	width:100%;
+	min-width: 360px;
+	height: auto;
+	min-height: 100px;
+	/*background: #00000026 0% 0% no-repeat padding-box;*/
+	opacity: 1;
+}
+
+
+.secondpoem_b {
+	margin: 0px 0% 0px;
+	width:100%;
+	min-width: 360px;
+	height: auto;
+	min-height: 100px;
 	background: #00000026 0% 0% no-repeat padding-box;
 	opacity: 1;
 }
 
-.secondpoem {
-	margin: 30px 0%;
-	width:100%;
-	min-width: 360px;
-	height: 360px;
-	background: #00000026 0% 0% no-repeat padding-box;
-	opacity: 1;
-}
-
-.secondpoem .head {
+.secondpoem_a .head {
 	margin:0;
 	width:100%;
 	min-width: 360px;
-	height: 200px;
-	background: #00000026 0% 0% no-repeat padding-box;
+	height: auto;
+	min-height: 200px;
+	/*background: #00000026 0% 0% no-repeat padding-box;*/
 	opacity: 1;
+	font-size: 0;
 }
 
-.secondpoem .body {
+.secondpoem_b .body {
 	margin:0;
 	width:100%;
 	min-width: 360px;
-	height: 160px;
+	height: auto;
+	min-height: 160px;
 	background: #00000026 0% 0% no-repeat padding-box;
 	opacity: 1;	
+	font-size: 0;
 }
 
 .dupiewords {
-    margin:  30px auto; /*Centering*/
-	width: 284px;
-	height: 160px;
-	background: #00000026 0% 0% no-repeat padding-box;
+    /*margin:  30px auto; /*Centering*/
+	padding: 30px 0;
+	width: 100%;
+	text-align: center;
+	min-height: 160px;
+	height: auto;		
+	background: #fffbef 0% 0% no-repeat padding-box;
 	opacity: 1;
 }
 
 .swindleprice {
-	margin: 30px 0 0;
+	margin: 0 0 0;
 	padding:30px 0;
 	min-width: 360px;
 	width: 100%;
@@ -231,128 +260,71 @@ body {
 	
 }
 
-.swindleprice .plan_a {
+.swindleprice .plan {
 	font-size:0;
 	margin: 0 auto 30px;
-	padding-bottom: 8px;
+	padding: 8px;
 	width: 284px;
-	height: 210px;
+	min-height: 224px;
+	height: auto;
 	background: #FFFFFF 0% 0% no-repeat padding-box;
+	background: url("../img/frame.png");
+	background-size: contain;
 	border: 0px solid #707070;
 	opacity: 1;
+	box-sizing: border-box;
 }
 
-.swindleprice .plan_a .subject {
-	width: 100%;
-	height: 40px;
-	background: #DDD 0% 0% no-repeat padding-box;
-	opacity: 1;
-}
-
-.swindleprice .plan_a .course {
-	display: inline-block;
-	margin:20px 14px 14px;
-	width: 60px;
-	height: 60px;
-
-	background: #DDD 0% 0% no-repeat padding-box;
-	border-radius:50%;
-	opacity: 1;
-}
-
-.swindleprice .plan_a .price {
-	display: inline-block;
-	margin:14px 16px 8px 0px;
-	width: 180px;
-	height: 72px;
-	background: #DDD 0% 0% no-repeat padding-box;
-	opacity: 1;
-}
-
-.swindleprice .plan_a .subscription {
-	display: inline-block;
-	margin:8px 10px 8px 16px;
-	width: 121px;
-	height: 30px;
-	background: #DDD 0% 0% no-repeat padding-box;
-	opacity: 1;
-}
-
-.swindleprice .plan_a .shop {
-	display: inline-block;
-	margin:8px 16px 8px 0;
-	width: 121px;
-	height: 30px;
-	background: #DDD 0% 0% no-repeat padding-box;
-	opacity: 1;
-}
-
-.swindleprice .plan_a .telephone {
-	margin:0 auto;
-	width: 252px;
-	height: 30px;
-	background: #DDD 0% 0% no-repeat padding-box;
-	opacity: 1;
-}
-
-.swindleprice .plan_b {
-	font-size:0;
+.swindleprice .plan:nth-child(2){
 	margin: 0 auto 15px;
-	padding-bottom: 8px;
-	width: 284px;
-	height: 210px;
-	background: #FFFFFF 0% 0% no-repeat padding-box;
-	border: 0px solid #707070;
-	opacity: 1;
 }
 
-.swindleprice .plan_b .subject {
+.swindleprice .plan .subject {
 	width: 100%;
-	height: 40px;
+	height: 132px;
+	margin-bottom: 8px;
 	background: #DDD 0% 0% no-repeat padding-box;
 	opacity: 1;
 }
 
-.swindleprice .plan_b .course {
-	display: inline-block;
-	margin:20px 14px 14px;
-	width: 60px;
-	height: 60px;
-	background: #DDD 0% 0% no-repeat padding-box;
-	border-radius:50%;
-	opacity: 1;
+.swindleprice .plan .pack{
+	width: 100%;
+	height:auto;
+	margin-bottom: 8px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-.swindleprice .plan_b .price {
-	display: inline-block;
-	margin:14px 16px 8px 0px;
-	width: 180px;
-	height: 72px;
-	background: #DDD 0% 0% no-repeat padding-box;
-	opacity: 1;
-}
-
-.swindleprice .plan_b .subscription {
-	display: inline-block;
-	margin:8px 10px 8px 16px;
-	width: 121px;
+.swindleprice .plan .pack .subscription_a {
+	display: table;
+	margin:0;
+	width: 130px;
 	height: 30px;
-	background: #DDD 0% 0% no-repeat padding-box;
+	/*background: #DDD 0% 0% no-repeat padding-box;*/
 	opacity: 1;
 }
-
-.swindleprice .plan_b .shop {
-	display: inline-block;
-	margin:8px 16px 8px 0;
-	width: 121px;
+.swindleprice .plan .pack .subscription_b {
+	display: table;
+	margin:0;
+	width: 130px;
 	height: 30px;
-	background: #DDD 0% 0% no-repeat padding-box;
+	/*background: #DDD 0% 0% no-repeat padding-box;*/
 	opacity: 1;
 }
 
-.swindleprice .plan_b .telephone {
+.swindleprice .plan .pack .shop {
+	display: table;
+	margin:0;
+	width: 130px;
+	height: 30px;
+	/*background: #DDD 0% 0% no-repeat padding-box;*/
+	opacity: 1;
+}
+
+.swindleprice .plan .telephone {
 	margin:0 auto;
-	width: 252px;
+	width: 100%;
 	height: 30px;
 	background: #DDD 0% 0% no-repeat padding-box;
 	opacity: 1;
@@ -360,31 +332,42 @@ body {
 
 .swindleprice .annotation {
 	margin: 0 auto 0;
-	padding-bottom: 8px;
 	width: 284px;
-	height: 100px;
-	background: #FFF 0% 0% no-repeat padding-box;
+	height:auto;
+	min-height: 50px;
+	/*background: #FFFFFF 0% 0% no-repeat padding-box;*/
 	border: 0px solid #707070;
 	opacity: 1;
 }
 
 .thirdpoem {
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 	min-width: 360px;
 	width: 100%;
-	height: 120px;
+	min-height: 120px;
+	height: auto;
 	background: #DDD;
 	border: 0px solid #707070;
 	opacity: 1;
 }
 
 .forthprocess {
+	padding: 30px 0 0;
 	min-width: 360px;
 	width: 100%;
 	height:auto;
 	display: flex;
+	background: #fffbef;
 	flex-direction: column;
 	align-items :center;
+}
+
+.forthprocess .head{
+	min-width: 360px;
+	width: 100%;
+	height:auto;
+	text-align: center;
+	margin: 0 0 30px;
 }
 
 .forthprocess .pack {
@@ -395,10 +378,12 @@ body {
 	opacity: 1;
 	display: flex;
 	justify-content: flex-end;
+	box-sizing: content-box;
 }
 
 .forthprocess .pack:nth-child(even) {
-	justify-content: flex-start;
+	transform: rotateY(180deg);
+	box-sizing: content-box;
 }
 
 .forthprocess .pack .note{
@@ -407,12 +392,12 @@ body {
 	margin: 0;
 	background: #BBB;
 	opacity: 1;
+	box-sizing: content-box;
 }
 
 .notcomparative {
 	width: 100%;
 	min-width: 360px;
-	
 	min-height: 100px;
 	height: auto;
 	padding-top: 30px;
@@ -431,49 +416,40 @@ body {
 	background: #FFFFFF 0% 0% no-repeat padding-box;
 	opacity: 1;
 }
-
-.notcomparative .pack .mes{
-	width: 284px;
-	height:80px;
-	background: #DDD 0% 0% no-repeat padding-box;
+.notcomparative .pack:nth-child(2) {
+	margin-bottom: 8px;
 }
 
-.notcomparative .pack .beforeafter{
-	width: 284px;
-	height:215px;
-	background: #FFF 0% 0% no-repeat padding-box;
-}
-
-.notcomparative .pack .annotation{
-	width: 284px;
-	height:80px;
-	background: #DDD 0% 0% no-repeat padding-box;
-}
 
 .notcomparative .annotation {
 	width: 284px;
-	height: 80px;
-	background: #FFFFFF 0% 0% no-repeat padding-box;
+	height: auto;
+	max-height: 80px;
+	/*background: #FFFFFF 0% 0% no-repeat padding-box;*/
 	opacity: 1;
 }
 
 .forthpoem {
+	margin: 0;
 	width: 100%;
 	min-width: 360px;
-	height: 100px;
+	min-height: 100px;
+	height: auto;
 	background: #DDD 0% 0% no-repeat padding-box;
 	opacity: 1;
+	font-size: 0;
 }
 
 .footer {
 	width: 100%;
 	min-width: 360px;
 	height: 100px;
-	background: #BBB 0% 0% no-repeat padding-box;
+	background: #FFF 0% 0% no-repeat padding-box;
 	opacity: 1;
 }
 
 /*TextRule*/
+
 html{
 	font-family: var(--sans);
 }
@@ -484,8 +460,10 @@ html{
 	color:#FFF;
 }
 .mouth p {
+	font-family: var(--serif);
 	margin: 0 1rem;
-	font-size: 1rem;
+	font-size: 0.75rem;
+	line-height: 1.25rem;
 	color:#FFF;
 }
 
@@ -497,17 +475,34 @@ html{
 .firstpoem p{
 	text-align: center;
 	font-family: var(--serif);
-	font-size: 2rem;
+	font-size: 1.2rem;
+	line-height: 2.25rem;
 	color:#000;
 }
 
-.threepointwindows .tpw_pack .box {
-	padding-top:1rem;
+.firstpoem p .large{
+	font-size: 1.75rem;
+}
+
+.threepointwindows .tpw_pack .circle img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.threepointwindows .tpw_pack .box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.threepointwindows .tpw_pack .box p {
 	text-align: center;
 	font-family: var(--serif);
-	font-size: 0.8rem;
 	color:#000;
+	font-size: 0.6rem;
+	line-height: 0.75rem;
 }
+
 
 .dupiegraph img{
 	width:100%;
@@ -515,21 +510,249 @@ html{
 }
 
 
-.secondpoem .head {
+.secondpoem_a .head {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.secondpoem .head p{
+.secondpoem_a .head p{
 	text-align: center;
 	font-family: var(--serif);
 	font-size: 2rem;
-	line-height: 4rem;
-	color:#000;
+	line-height: 3rem;
+	color:#FFF;
 }
 
-.secondpoem .body img{
+.secondpoem_a .head p span.small{
+	font-size: 1.25rem;
+}
+
+.secondpoem_b .body img{
 	width:100%;
 	height:auto;
+}
+
+.dupiewords img{
+	width:284px;
+	height:auto;
+}
+
+.swindleprice .plan .subject img{
+	width:100%;
+	height:auto;
+}
+
+.swindleprice .plan .pack .subscription_a span{
+	font-size: 0.75rem;
+	display: table-cell;
+	width: 100%;
+	height:27px;
+	box-sizing: content-box;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0 0;
+	text-decoration: none;
+	border-radius: 4px;
+	color: #ffffff;
+	background-image: linear-gradient(#f96 0%, #fd6 100%);
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+	border-bottom: solid 2px #d86;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.29);
+}
+
+.swindleprice .plan .pack .subscription_a span:active {
+	-webkit-transform: translateY(4px);
+	transform: translateY(4px);
+	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+	border-bottom: none;
+}
+
+.swindleprice .plan .pack .subscription_b span{
+	font-size: 0.75rem;
+	display: table-cell;
+	width: 100%;
+	height:27px;
+	box-sizing: content-box;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0 0;
+	text-decoration: none;
+	border-radius: 4px;
+	color: #ffffff;
+	background-image: linear-gradient(#69f 0%, #6df 100%);
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+	border-bottom: solid 2px #68d;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.29);
+}
+
+.swindleprice .plan .pack .subscription_b span:active {
+	-webkit-transform: translateY(4px);
+	transform: translateY(4px);
+	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+	border-bottom: none;
+}
+
+.swindleprice .plan .pack .shop span{
+	font-size: 0.75rem;
+	display: table-cell;
+	width: 100%;
+	height:27px;
+	box-sizing: content-box;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0 0;
+	text-decoration: none;
+	border-radius: 4px;
+	color: #ffffff;
+	background-image: linear-gradient(#FB1 0%, #FE6 100%);
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+	border-bottom: solid 2px #CA5;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.29);
+}
+
+.swindleprice .plan .pack .shop span:active {
+	-webkit-transform: translateY(4px);
+	transform: translateY(4px);
+	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+	border-bottom: none;
+}
+
+
+.swindleprice .plan .telephone {
+	text-align: center;
+}
+.swindleprice .plan .telephone img{
+	margin: auto;	
+	height:30px;
+	width: auto;
+}
+
+.swindleprice .annotation p{
+	color: #FFF;
+	font-size: 0.25rem;
+	margin: 0;
+}
+
+.thirdpoem img{
+	width: 100%;
+	height: auto;
+}
+
+
+
+.forthprocess .head{
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	color: #E60012;
+	font-family: var(--serif);
+	font-weight: bold;
+}
+.forthprocess .head p{
+	margin: 0;
+}
+
+.forthprocess .pack{
+	/*
+	background: url("../img/stepimage.png");
+	background-size: 120px auto;
+	background-repeat: no-repeat;
+	*/
+}
+
+.forthprocess .pack:nth-child(2){
+	background: url("../img/redpowder01.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.forthprocess .pack:nth-child(3){
+	background: url("../img/redpowder02.png");
+	background-size: auto 120px;
+	background-repeat: no-repeat;
+}
+
+
+.forthprocess .pack:nth-child(4){
+	background: url("../img/redpowder03.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.forthprocess .pack:nth-child(5){
+	background: url("../img/step04.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.forthprocess .pack .note{
+	background: url("../img/stepback.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.forthprocess .pack:nth-child(even) .note p{
+	transform: rotateY(180deg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+
+.forthprocess .pack:nth-child(odd) .note p{
+	padding-left: 54px;
+}
+.forthprocess .pack:nth-child(even) .note p{
+	padding-left: 8px;
+	padding-right: 54px;
+}
+
+.forthprocess .pack .note p{
+	line-height: 1.5rem;
+	font-size: 1rem;
+	color: #FFF;
+}
+
+.notcomparative .pack img{
+	width:100%;
+	height: auto;
+}
+.notcomparative .annotation p{
+	color: #FFF;
+	font-size: 0.25rem;
+	margin: 0;
+}
+.notcomparative .annotation p a:link , .notcomparative .annotation p a:visited{
+	color: #FFF;
+}
+
+.forthpoem img{
+	margin: 0;
+	width: 100%;
+	height: auto;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer img{
+	margin-top: 30px;
+	width: 25%;
+	height: auto;
+}
+.footer p{
+	font-size: 0.5rem;
+	color: #666;
+	margin-bottom: 30px;
+}
+
+.footer p a:link,.footer p a:visited{
+	color: #666;
+}
+
+.crackback{
+	background: url("../img/crackback.png");
+	background-size: auto 100%;
 }
