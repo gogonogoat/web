@@ -1,4 +1,4 @@
-﻿:root{
+:root{
 --base_background:url("../images/svg/argyledt.svg")0 0;
 --base_background_size:15pc auto;
 --content_background:0;
@@ -295,7 +295,7 @@ height:2pc
 width:980px;
 height:300px;
 position:relative;
-background-image:url(../images/980x300.png)
+background-image:url(../../../00_dirty_kitchen/images/980x300.png)
 }
 .bg01{
 background-image:url(../images/pageimg/index.jpg)
@@ -888,6 +888,6 @@ display:inline-block;
 content:"";
 height:50px;
 background-color:#000;
--webkit-mask-image:url(../images/svg/mask_right_top.svg);
-mask-image:url(../images/svg/mask_right_top.svg)
+-webkit-mask-image:url(../../../00_dirty_kitchen/images/svg/mask_right_top.svg);
+mask-image:url(../../../00_dirty_kitchen/images/svg/mask_right_top.svg)
 }

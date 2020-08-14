@@ -322,7 +322,7 @@ LyteBox.prototype.changeContent = function(imageNum) {
 	this.doc.getElementById('lbNumberDisplay').style.display = 'none';
 	if (this.navType == 2 || this.isLyteframe) {
 		object = this.doc.getElementById('lbNavDisplay');
-		object.innerHTML = '&nbsp;&nbsp;&nbsp;<span id="lbPrev2_Off" style="display: none;" class="' + this.theme + '">&laquo; prev</span><a href="#" id="lbPrev2" class="' + this.theme + '" style="display: none;">&laquo; prev</a> <b id="lbSpacer" class="' + this.theme + '">||</b> <span id="lbNext2_Off" style="display: none;" class="' + this.theme + '">next &raquo;</span><a href="#" id="lbNext2" class="' + this.theme + '" style="display: none;">next &raquo;</a>';
+		object.innerHTML = '   <span id="lbPrev2_Off" style="display: none;" class="' + this.theme + '">« prev</span><a href="#" id="lbPrev2" class="' + this.theme + '" style="display: none;">« prev</a> <b id="lbSpacer" class="' + this.theme + '">||</b> <span id="lbNext2_Off" style="display: none;" class="' + this.theme + '">next »</span><a href="#" id="lbNext2" class="' + this.theme + '" style="display: none;">next »</a>';
 		object.style.display = 'none';
 	}
 	if (this.isLyteframe) {

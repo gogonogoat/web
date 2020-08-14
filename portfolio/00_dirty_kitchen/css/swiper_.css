@@ -42,7 +42,7 @@
 }
 
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
-	background-image:url("../images/32x32_.png");
+	background-image:url("../../../00_dirty_kitchen/images/32x32_.png");
 	background-image:url("../images/swiper/arrow_r.png");
 	right: 43%;
     left: auto;
@@ -50,7 +50,7 @@
 	outline:none;
 }
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
-	background-image:url("../images/32x32__.png");
+	background-image:url("../../../00_dirty_kitchen/images/32x32__.png");
 	background-image:url("../images/swiper/arrow_l.png");
 	left: 43%;
     right: auto;
