@@ -1,0 +1,148 @@
+/* CSS Document */
+
+
+.content{
+	box-sizing: border-box;
+	width:100%;
+	max-width:980px;
+	height:auto;
+	min-height: 800px;
+	font-size:0;
+	background:var(--color_light_bg)
+}
+
+.content h1{
+	font-size:2rem;
+	color:#300;
+	margin-left:1rem;
+	text-align: center;
+	margin: 2rem 0;
+}
+
+.content p.poem{
+	margin: 2rem 0;
+	font-size:3.5rem;
+	padding:10rem 0;
+	text-align: center;
+	font-family:Sawarabi Mincho,Noto Serif JP,Arial,serif;
+	line-height: 6rem;
+	color:#FFF;
+	background: url("../vomitvortex/poem.jpg")
+}
+
+.table_of_contents{
+	margin:2rem;
+	color:#000;
+}
+.table_of_contents h2{
+	font-size:2rem;
+	margin: 0;
+}
+.table_of_contents ul{
+	font-size:1rem;
+	margin: 0;
+	line-height: 1.75rem;
+}
+
+
+.overview{
+	margin:2rem;
+	font-size: 1rem;
+	color:#000;
+}
+
+.overview h2{
+	font-size:2rem;
+	margin: 0;
+}
+
+.overview p{
+	margin: 2rem 0 2rem 2rem;
+	line-height: 1.75rem;
+}
+
+.overview .how{
+	margin-left: 2rem;
+}
+.overview .how h4{
+	margin: 2rem 0 1rem;
+}
+.overview .how p{
+	margin: 1rem 0 1rem 2rem;
+}
+
+.sample{
+	margin:2rem;
+	font-size: 1rem;
+	color:#000;
+}
+
+.sample h2{
+	font-size:2rem;
+	margin: 0;
+}
+
+.sample ul{
+	margin:3rem 0 2rem 0;
+	list-style: none;
+	display: flex;
+	justify-content:space-around;
+}
+
+.sample li{
+	text-align: center;
+}
+.sample img{
+	display: block;
+	margin-bottom: 1rem;
+	width: 320px;
+	height:240px;
+}
+
+.usage{
+	margin:2rem;
+	font-size: 1rem;
+	color:#000;
+}
+
+.usage li{
+	margin-bottom: 2rem;
+}
+.usage li{
+	margin-top:2rem;
+}
+
+.sample h2{
+	font-size:2rem;
+	margin: 0;
+}
+
+.requirements{
+	margin:2rem;
+	font-size: 1rem;
+	color:#000;
+}
+
+.requirements p{
+	margin-left: 2rem;
+}
+
+.download{
+	margin:2rem;
+	font-size: 1rem;
+	color:#000;
+}
+
+.download a{
+	margin-left: 2rem;
+}
+
+.movie{
+	margin:2rem;
+	font-size: 1rem;
+	color:#000;
+}
+
+.movie .m{
+	margin-left: 2rem;
+}
