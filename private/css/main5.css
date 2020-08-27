@@ -27,7 +27,8 @@
 	font-family:Sawarabi Mincho,Noto Serif JP,Arial,serif;
 	line-height: 6rem;
 	color:#FFF;
-	background: url("../vomitvortex/poem.jpg")
+	background: url("../vomitvortex/poem.jpg");
+	background-size: contain;
 }
 
 .table_of_contents{
