@@ -1,0 +1,117 @@
+﻿html,body,div,p{
+	padding:0;
+	margin:0;
+}
+body{
+	background:#FED;
+	margin-left:1rem;
+	font-family:Noto Sans JP,Arial,YuGothic,Yu Gothic,Hiragino Kaku Gothic ProN,ヒラギノ角ゴ ProN W3,メイリオ,Meiryo,ＭＳ\ ゴシック,sans-serif;
+}
+#header{
+	display:flex;
+	flex-direction: row;
+	justify-content:space-between;
+	width:100%;
+}
+#header h1{
+	font-size:1.25rem;
+}
+#header p{
+	font-size:0.9rem;
+	margin:auto 0;
+}
+
+#app{
+	display:flex;
+	flex-direction: column;
+	width:80%;
+	max-width:640px;
+}
+
+#container{
+	display:flex;
+	flex-direction: column;
+	width:100%;
+}
+#input{
+	height:auto;
+	width:100%;
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+.input{
+	background:#DCB;
+	margin:0;
+	padding:0;
+	border:0 solid;
+	box-sizing: border-box;
+	resize: none;
+	width:100%;
+	height:11rem;
+	display: block;
+}
+#result{
+	background:#AFA;
+	padding:0;
+	margin:0;
+	border:0 solid;
+	box-sizing: border-box;
+	display:block;
+	width:100%;
+	resize: none;
+}
+#clear{
+	box-sizing: border-box;
+	height:3rem;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+.graphBase{
+	height:1rem;
+}
+.graphMember{
+	display:inline-block;
+	box-sizing: border-box;
+	height:100%;
+}
+.graphBase .graphMember:nth-child(1){background:#FAA;}
+.graphBase .graphMember:nth-child(2){background:#AFA;}
+.graphBase .graphMember:nth-child(3){background:#AAF;}
+.graphBase .graphMember:nth-child(4){background:#EE9;}
+.graphBase .graphMember:nth-child(5){background:#9EE;}
+.graphBase .graphMember:nth-child(6){background:#E9E;}
+.graphBase .graphMember:nth-child(7){background:#EEE;}
+.graphBase .graphMember:nth-child(8){background:#CCC;}
+
+
+.graphPart td:nth-child(1){
+	width:8rem;
+}
+.graphPart td:nth-child(2){
+	width:4rem;
+}
+.graphPart td:nth-child(3) div{
+	display:inline-block;
+	box-sizing: border-box;
+	height:1rem;
+}
+
+.graphPart tr:nth-child(1) .graphMember{background:#FAA;}
+.graphPart tr:nth-child(2) .graphMember{background:#AFA;}
+.graphPart tr:nth-child(3) .graphMember{background:#AAF;}
+.graphPart tr:nth-child(4) .graphMember{background:#EE9;}
+.graphPart tr:nth-child(5) .graphMember{background:#9EE;}
+.graphPart tr:nth-child(6) .graphMember{background:#E9E;}
+.graphPart tr:nth-child(7) .graphMember{background:#EEE;}
+.graphPart tr:nth-child(8) .graphMember{background:#CCC;}
+
+#input,#counter, #kanakanakanji,#allchar{
+	padding-bottom:1rem;
+	background:RGBA(255,255,255,0.5);
+}
+#kanakanakanji table,#allchar table{
+width:100%;
+}
