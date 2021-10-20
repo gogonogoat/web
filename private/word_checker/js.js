@@ -104,7 +104,7 @@ const vue = new Vue({
 		},
 		toStyle:function(num){
 			return {
-				width:new Intl.NumberFormat('ja', { style: 'percent', maximumSignificantDigits: 9}).format(num),
+				width:new Intl.NumberFormat('ja', { style: 'percent', maximumSignificantDigits: 9}).format(num*0.999),
 				border: (num == 0 ? "" : "solid 1px RGBA(0,0,0,0.333)")
 			};
 		},
