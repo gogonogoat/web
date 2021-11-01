@@ -40,12 +40,28 @@
 			</div>
 			<div class="subcontent">
 				<div class="content_image">プログラミング、少しできます。 <img src="images/program/program.png" alt=""></div>
-				<div class="container">
-					<p>PHP : サーバーサイドに関する造詣は浅いですが書けます。<br>JavaScriptの項のソフトウェアにもPHPを用いています。<br><br>PHPでMySQL扱う目的の為だけに<br>ログイン・オンラインセーブ＆ロードが追加されています。<br>蛇足。</p>
-					<p>JavaScript : Vueを用いた動的なコンテンツ作成を行えます。<br>Javaで作成したジャンケンのソフトウェアを<br><a href="http://www.gogonogoat00.shop/jkm" target="_blank" class="link-hover2 blank_mini">Web版</a>としてリメイクしました。</p>
-					<p>Python : オープンソースの<a href="https://gogonogoat.github.io/web/private/vomitvortex.html" target="_blank" class="link-hover2 blank_mini">フリーウェア</a>を公開しています。<br><br>RimWorldのMod管理用途に作りましたが<br>Steam内のどのModであろうとも多分行けそう。<br><br>しかし全く宣伝していないので恐らく利用者はいません。<br><br>これを元にSteamのMOD構成を<br>共有できるWebサービスを作ったら面白いかもしれない。</p>
-					<p>Java : どこぞで見たようなジャンケンのソフトを作りました。<br>しかし効果音を元ネタから流用しているため公開できません。</p>
-				</div>
+				<div id="app" class="container">
+					<div class="product" v-for="p in product">
+						<div class="img">
+							<img v-bind:src='toImageUrl(p["image"])'></img>
+						</div>
+						<div class="name">・名称　<a v-bind:href='p["url"]' v-html='p["name"]'></a></div>
+						<hr>
+						<div class="">・機能面の概要</div>
+						<div class="" v-html='descFix(p["desc"])'></div>
+						<hr>
+						<div class="">・用いた技術</div>
+						<div class="" v-html='descFix(p["skill"])'></div>
+						<div class="skillicon">
+							<div class="iconA">
+								<img v-for='a in p["iconA"]' v-bind:src='toIcon(a)'>
+							</div>
+							<div class="iconB">
+								<img v-for='b in p["iconB"]' v-bind:src='toIcon(b)'>
+							</div>
+						</div>
+						<hr>
+					</div>
 			</div>
 			<div class="foot">
 				<div class="logo_small"></div>
@@ -59,12 +75,9 @@
 				<div class="copyright">Copyright &copy; gogonogoat All Rights Reserved.</div>
 			</div>
 		</div>
-		<script src="script/script.js">
-		</script>
-		<script src="lib/swiper-4.5.0/js/swiper.min.js">
-		</script>
-		<script src="script/swiper_top_01.js">
-		</script>
+		
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+		<script src="script/program.js"></script>
 	</div>
 </body>
 </html>

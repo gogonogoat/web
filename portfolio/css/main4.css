@@ -729,6 +729,7 @@ justify-content:flex-start;
 
 }
 
+
 .subcontent .container p,blockquote{
 width:75%;
 padding:auto;
@@ -832,4 +833,32 @@ text-align:center;
 }
 
 .subcontent .container table.samplesite tr td{
+}
+
+#app{
+	width:75%;
+	color:var(--color_card_txt);
+	line-height:2rem;
+	font-size:1rem;
+	font-family:Noto Sans JP,Arial,YuGothic,Yu Gothic,Hiragino Kaku Gothic ProN,ヒラギノ角ゴ ProN W3,メイリオ,Meiryo,ＭＳ\ ゴシック,sans-serif;
+}
+
+.skillicon .iconA, .skillicon .iconB{
+	margin-top:1rem;
+	display: flex;
+	flex-direction: row;
+	height:3rem;
+}
+.skillicon .iconA img, .skillicon .iconB img{
+	margin-left:1rem;
+	height:100%;
+	width:auto;
+}
+
+.product{
+margin-bottom:4rem;
+}
+
+.product .img{
+text-align: center;
 }
