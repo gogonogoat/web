@@ -45,7 +45,7 @@
 						<div class="img">
 							<img v-bind:src='toImageUrl(p["image"])'></img>
 						</div>
-						<div class="name">・名称　<a v-bind:href='p["url"]' v-html='p["name"]'></a></div>
+						<div class="name">・名称　<a v-bind:href='p["url"]' v-html='p["name"]' target="_blank" class="link-hover2 blank_mini"></a></div>
 						<hr>
 						<div class="">・機能面の概要</div>
 						<div class="" v-html='descFix(p["desc"])'></div>
@@ -78,7 +78,7 @@
 		</div>
 		
 		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
-		<script src="script/program.js"></script>
+		<script src="js/program.js"></script>
 	</div>
 </body>
 </html>

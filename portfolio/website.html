@@ -40,17 +40,20 @@
 			</div>
 			<div class="subcontent">
 				<div class="content_image">Webサイト、少し作れます。 <img src="images/website/website.png" alt=""></div>
-				<div class="container">
-					<p>まず、ご覧の通りこのWebページは<br class="spbr">HTMLもCSSも私が書いています。</p>
-					<p>デベロッパーツールから<br class="spbr">モバイル表示エミュレータを用いれば<br>レスポンシブ対応している事も<br class="spbr">ご確認頂けます。</p>
-					<p>PCファーストで作成した<br class="spbr">この<a href="00_dirty_kitchen/index.html" target="_blank" class="link-hover2 blank_mini">架空の飲食店のサイト</a>のCSSを流用して<br>タブレット解像度・モバイル解像度に<br class="spbr">対応しました。</p>
-					<table class="samplesite">
-						<tr><th></th><th>コンセプト/概要</th><th>レスポンシブ</th><th>備考</th></tr>
-						<tr><td>01</td><td><a href="index.html" class="link-hover2">このサイト</a></td><td>○</td><td></td></tr>
-						<tr><td>02</td><td><a href="00_dirty_kitchen/index.html" target="_blank" class="link-hover2 blank_mini">架空の飲食店サイト</a></td><td>×</td><td></td></tr>
-						<tr><td>03</td><td><a href="01_funnypowder/index.html" target="_blank" class="link-hover2 blank_mini">架空の健康食品LP </a></td><td>×</td><td>スマホ向け</td></tr>
-						
-					</table>
+				<div id="app" class="container">
+					<div class="product" v-for="p in product">
+						<div class="img">
+							<img v-bind:src='toImageUrl(p["image"])'></img>
+						</div>
+						<div class="name">・名称　<a v-bind:href='p["url"]' v-html='p["name"]' target="_blank" class="link-hover2 blank_mini"></a></div>
+						<hr>
+						<div class="">・コンテンツの概要</div>
+						<div class="" v-html='descFix(p["desc"])'></div>
+						<hr>
+						<div class="">・技術面に関する諸々</div>
+						<div class="" v-html='descFix(p["skill"])'></div>
+						<hr>
+					</div>
 				</div>
 			</div>
 			<div class="foot">
@@ -65,12 +68,9 @@
 				<div class="copyright">Copyright &copy; gogonogoat All Rights Reserved.</div>
 			</div>
 		</div>
-		<script src="script/script.js">
-		</script>
-		<script src="lib/swiper-4.5.0/js/swiper.min.js">
-		</script>
-		<script src="script/swiper_top_01.js">
-		</script>
+
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+		<script src="js/website.js"></script>
 	</div>
 </body>
 </html>

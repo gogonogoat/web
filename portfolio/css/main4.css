@@ -426,7 +426,7 @@ background:var(--color_light_bg)
 width:auto;
 margin:auto;
 margin-top:3rem;
-margin-bottom:1rem;
+margin-bottom:3rem;
 padding:auto;
 height:auto;
 text-align:center
@@ -715,6 +715,7 @@ text-align:center
 .subcontent .content_image img{
 width:auto;
 height:40px;
+margin-bottom:2rem;
 }
 
 .subcontent .container{
@@ -867,3 +868,45 @@ text-align: center;
 	width:100%;
 	height:auto;
 }
+
+
+ul#app{
+padding:0;
+display: flex;
+justify-content:center;
+align-items: center;
+flex-direction:column;
+flex-wrap:wrap;
+margin:0px auto;
+padding:0px;
+width:90%;
+
+}
+
+ul#app li.retouchContainer{
+list-style: none;
+width:100%;
+margin-bottom:5rem;
+}
+
+.retouchContainer .image {
+display: flex;
+}
+.retouchContainer .image .box{
+	width:50%;
+}
+
+.retouchContainer .image .box p{
+	text-align:center;
+	margin:0;
+}
+.retouchContainer .image .box img{
+	width:100%;
+	height:auto;
+}
+
+.retouchContainer .reference{
+display: flex;
+}
+
+.retouchContainer .reference p {margin:0;}
