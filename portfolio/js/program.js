@@ -33,7 +33,7 @@ const product = [
 	"name":"文字数・文字種チェッカー",
 	"url":"https://gogonogoat.github.io/web/private/word_checker/index.html",
 	"desc":`
-		Webライティングを行う人を利用者として想定して開発したWebアプリです。
+		Webライティングを行う人を利用者に想定して開発したWebアプリです。
 		テキストエリアに文章をペーストすると、
 		文字種の比率や文字数を即座に表示することができます。
 		
